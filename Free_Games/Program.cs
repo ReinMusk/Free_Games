@@ -12,7 +12,9 @@ namespace Free_Games
     {
         static void Main()
         {
-            var url = $"https://www.freetogame.com/api/games?genre=MMORPG&platform=pc";
+            var platform = "pc";
+
+            var url = $"https://www.freetogame.com/api/games?platform={platform}";
 
             var request = WebRequest.Create(url);
 
